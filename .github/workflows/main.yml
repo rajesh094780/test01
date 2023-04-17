@@ -1,0 +1,17 @@
+name: Oracle DB Refresh - UAT
+on:
+  workflow_dispatch:
+    inputs:
+      customercode:
+        description: "CUSTOMER CODE"
+        required: true
+jobs:
+  GET_DETAILS_FROM_AZURE:
+    runs-on: ubuntu-latest #veuwcore1120 #windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Run - If Steps/Job Fails"
+        run: |
+         
+          python3 --version
+          
