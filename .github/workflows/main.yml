@@ -14,4 +14,6 @@ jobs:
         run: |
           pwd
           python3 --version
+          cd "src/dbrefresh/"
+          python3 test.py
           
