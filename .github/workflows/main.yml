@@ -7,13 +7,25 @@ on:
         required: true
 jobs:
   GET_DETAILS_FROM_AZURE:
-    runs-on: ubuntu-latest #veuwcore1120 #windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: "Run - If Steps/Job Fails"
         run: |
           pwd
+          echo "action_state=yellow"
           python3 --version
           cd "src/dbrefresh/"
           python3 test.py
-          
+  GET_DETAILS_FROM_AZURE1:
+    runs-on: ubuntu-latest
+    needs: [GET_DETAILS_FROM_AZURE]
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Run - If Steps/Job Fails"
+        run: |
+          pwd
+          echo "${{ env.action_state }}"
+          python3 --version
+          cd "src/dbrefresh/"
+          python3 test.py
