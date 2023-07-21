@@ -5,6 +5,39 @@ on:
       customercode:
         description: "CUSTOMER CODE"
         required: true
+      customercoqde:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqdwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwwwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwwwwwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwwwssswwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwwwssssswwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwwwssssssswwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwsswwssssssswwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwsswwssssssssswwe:
+        description: "CUSTOMER CODE"
+        required: true
+      customercoqwdwsssswwssssssssswwe:
+        description: "CUSTOMER CODE"
+        required: true
 jobs:
   GET_DETAILS_FROM_AZURE:
     runs-on: ubuntu-latest
